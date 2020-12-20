@@ -1,2 +1,2 @@
 # RenownPlus
-【Minecraft plugin】Reward honorary players and let them become a manager. Free yourself from annoying player disputes.
+【Minecraft plugin】To clean the player inventory or slot by command.

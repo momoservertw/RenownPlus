@@ -1,0 +1,7 @@
+tw\momocraft\renownplus\utils\ConfigPath.class
+tw\momocraft\renownplus\handlers\ConfigHandler.class
+tw\momocraft\renownplus\utils\Utils.class
+tw\momocraft\renownplus\RenownPlus.class
+tw\momocraft\renownplus\Commands.class
+tw\momocraft\renownplus\handlers\RegisterHandler.class
+tw\momocraft\renownplus\utils\TabComplete.class

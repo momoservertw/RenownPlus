@@ -1,0 +1,79 @@
+# ░░░░░░░░░░░░░░░   RenownPlus, By Momocraft♥   ░░░░░░░░░░░░░░░
+#  Spigot: https://www.spigotmc.org/resources/renownplus.86532/
+#  Wiki: https://github.com/momoservertw/RenownPlus/wiki
+# ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+Config-Version: 1
+Check-Updates: true
+
+Reputation:
+  Enable: true
+  Gain:
+    # Given from daily login.
+    Login:
+      Enable: true
+      Amount: 1
+      Limit:
+        Reset: "day"
+        Amount: 1
+    # Given from play time.
+    Online:
+      Enable: true
+      # Unit: minute, 180 = 3 hours
+      Interval: 180
+      Amount: 1
+      Limit:
+        Reset: "day"
+        Amount: 1
+    # Given from other player.
+    Heart:
+      Enable: true
+      Amount: 1
+      Limit:
+        Reset: "day"
+        Amount: 3
+    Donation:
+      Enable: true
+      # Recommend: USD 3/points
+      Amount: 1
+      Limit:
+        Reset: "month"
+        Amount: 40
+    # Given from RenownPlus command "/rptp give <player> <amount> [GROUP]"
+    Example1:
+      Enable: true
+      Amount: 1
+      Limit:
+        Reset: "day"
+        Amount: 10
+# To give other player a "Reputation" who you like.
+Heart:
+  Enable: true
+  Login:
+    Enable: true
+    Amount: 1
+    Limit:
+      Reset: "day"
+      Amount: 3
+  Online:
+    Enable: true
+    # Unit: minute, 180 = 3 hours
+    Interval: 180
+    Amount: 1
+    Limit:
+      Reset: "day"
+      Amount: 5
+
+
+Message:
+  prefix: "&f[&aSLP&f] &r"
+  Commands:
+    title: "&8▩▩▩▩▩▩▩▩▩▩ &dRenownPlus &8▩▩▩▩▩▩▩▩▩▩"
+    help: "&f/scp help &8- &7This help menu."
+    reload: "&f/scp reload &8- &7Reloads config file."
+    version: "&f/scp version &8- &7Checks the plugin version and updates."
+    checkslime: "&f/scp checkslime &8- &7To get the information of slime chunks."
+    checkslimeOther: "&f/scp checkslime [player] &8- &7To get the information of slime chunks for other player."
+  slimeChunkFound: "&aYou are standing on a slime chunk."
+  slimeChunkNotFound: "&fYou are not standing on a slime chunk."
+  slimeChunkNearInfo: "&eThere are &6%amount% slime blocks &enearby you. &7(Distance: %distance% blocks)"
+  slimeChunkNearInfoNull: "&cThere is no slime chunks nearby you."

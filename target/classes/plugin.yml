@@ -1,0 +1,42 @@
+name: RenownPlus
+main: tw.momocraft.renownplus.RenownPlus
+author: Momocraft
+api-version: 1.13
+version: 1.0.1
+description: Best slime chunk checking plugin! Executing custom command and show particle.
+depend: [CorePlus]
+
+commands:
+  renownplus:
+    description: Displays main command menu.
+    permission: renownplus.use
+    aliases: [ scp ]
+    usage: |
+      /renownplus
+
+permissions:
+  renownplus.*:
+    description: Allows use of all commands and feature.
+    default: op
+    children:
+      renownplus.use: true
+      renownplus.command.*: true
+  renownplus.use:
+    description: Allows use of basic commands.
+    default: true
+  renownplus.command.*:
+    description: Allows use all commands.
+    default: op
+    children:
+      renownplus.command.reload: true
+      renownplus.command.version: true
+      renownplus.command.slimecheck: true
+  renownplus.command.reload:
+    description: Allows use of /renownplus command reload.
+    default: op
+  renownplus.command.version:
+    description: Allows use of command /renownplus version.
+    default: op
+  renownplus.command.slimecheck:
+    description: Allows use of command /renownplus slimecheck.
+    default: op
